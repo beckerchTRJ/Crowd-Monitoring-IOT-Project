@@ -24,11 +24,11 @@ CONFIG = {
         "wav_file": "/data/data/com.termux/files/home/noise_sample.wav"
     },
        "email": {
-        "sender": "scottwang1013@gmail.com",
-        "password": "zlsu onny ahsa qhbv",  # Generate this from Google Account settings
-        "recipients": ["shihaow@usc.edu", "scottwang1013@gmail.com"],
+        "sender": "youremail@gmail.com",
+        "password": "",  # Generate this from Google Account settings
+        "recipients": ["youremail@gmail.com"],
         "smtp_server": "smtp.gmail.com",
-        "smtp_port": 587
+        "smtp_port": 
     },
     "thresholds": {
         "noise_spike": 45,  # dB threshold for noise spike
