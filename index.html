@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowd Density Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&family=Audiowide&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Add these in the head section of your HTML -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <nav>
+            <div class="title-container">
+                <h1>CAPACITOR</h1>
+                <p class="subtitle">Real-time Monitoring System</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search location...">
+            </div>
+        </nav>
+
+        <div class="metrics-container">
+            <div class="metric-card">
+                <div class="metric-icon">💡</div>
+                <div class="metric-content">
+                    <h3>Light Level</h3>
+                    <div class="metric-value-container">
+                        <p class="value">450</p>
+                        <p class="unit">lux</p>
+                    </div>
+                    <div class="metric-gauge"></div>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon">🔊</div>
+                <div class="metric-content">
+                    <h3>Sound Level</h3>
+                    <div class="metric-value-container">
+                        <p class="value">65</p>
+                        <p class="unit">dB</p>
+                    </div>
+                    <div class="metric-gauge"></div>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon">👥</div>
+                <div class="metric-content">
+                    <h3>Proximity</h3>
+                    <div class="metric-value-container">
+                        <p class="value">82</p>
+                        <p class="unit">people/m²</p>
+                    </div>
+                    <div class="metric-gauge"></div>
+                </div>
+            </div>
+            <div class="metric-card safety-card">
+                <div class="metric-icon">🛡️</div>
+                <div class="metric-content">
+                    <h3>Safety Score</h3>
+                    <div class="safety-score-container">
+                        <div class="safety-score">8.5</div>
+                        <div class="safety-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="map-container">
+                <h2>Live Density Map</h2>
+                <div id="map"></div>
+                <div class="location-controls">
+                    <button class="location-btn active">Location A</button>
+                    <button class="location-btn">Location B</button>
+                    <button class="location-btn">Location C</button>
+                </div>
+            </div>
+            <div class="charts-container">
+                <div class="chart">
+                    <h2>Crowd Trend</h2>
+                    <canvas id="crowdTrend"></canvas>
+                </div>
+                <div class="prediction-card">
+                    <h2>Risk Assessment</h2>
+                    <div class="prediction-grid">
+                        <div class="prediction-item">
+                            <span class="location">Location A</span>
+                            <span class="status high">High Risk</span>
+                        </div>
+                        <div class="prediction-item">
+                            <span class="location">Location B</span>
+                            <span class="status medium">Medium Risk</span>
+                        </div>
+                        <div class="prediction-item">
+                            <span class="location">Location C</span>
+                            <span class="status low">Low Risk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-panel">
+            <button class="deploy-btn">
+                <span class="btn-icon">🚨</span>
+                Deploy Officials
+            </button>
+            <div class="quick-stats">
+                <div class="stat">
+                    <span class="stat-label">Active Alerts</span>
+                    <span class="stat-value">3</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Officials Available</span>
+                    <span class="stat-value">12</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
