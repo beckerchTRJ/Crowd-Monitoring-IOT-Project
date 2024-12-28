@@ -1,5 +1,6 @@
 Youtube Link: https://www.youtube.com/watch?v=LbNKR4wWQQg 
-Canva Link: https://www.canva.com/design/DAGYj7B1vYY/lTZDWgvlLEK3cPX3bxsgMw/edit?utm_content=DAGYj7B1vYY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton****
+Canva Link: https://www.canva.com/design/DAGYj7B1vYY/lTZDWgvlLEK3cPX3bxsgMw/edit?utm_content=DAGYj7B1vYY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
+
 # Crowd Monitoring IOT Project
 
 ## Overview
